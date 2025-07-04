@@ -1,0 +1,674 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+       background-color: #cdcdcd;
+}
+
+.nav1{
+    background-color: #000;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 23px;
+}
+
+.nav1 ul a{
+color: white;
+padding: 10px;
+}
+
+
+
+.Begin{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+
+#toggle-btn{
+    position: relative;
+    top: 10px;
+    right: 20px;
+    z-index: 1001;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#slider{
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 200px;
+    height: 100%;
+    background-color: #f9f9f9;
+    box-shadow: -2px 0 4px rgba(0,0,0, 0.2);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index:999;
+    overflow: auto;
+}
+
+#slider ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+#slider ul li a{
+    color: #333;
+}
+
+#slider.active{
+    left: 0;
+}
+
+
+.ShopList{
+    display: flex;
+    justify-content: space-between;
+    background-color: #b2b1b1;
+    padding: 10px;
+}
+
+.li:hover{
+    transition: 3s ease-in-out;
+    background-color: #4f4f4f;
+}
+
+.li{
+    padding: 10px;
+}
+
+.li a{
+    color: #333;
+    padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.Full-Screen{
+    position: relative;
+}
+
+.Full-Screen img{
+ width: 100%;   
+ height: 567px;
+ object-fit: cover;
+}
+
+.Text{
+    position: absolute;
+    top: 20%;
+    left: 4%;
+}
+
+.Text button{
+    border: none;
+background-color: #ff0000;
+color: #fff;
+padding: 4px;
+}
+
+.Text h1{
+    font-size: 44px;
+    /* font-weight: 600; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Shop{
+  display: inline-block;  
+  background-color: #7b05dc;
+  color: #fff;
+  padding: 14px;
+  border-radius: 100px;
+  width: 48%;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.img{
+    position: relative;
+}
+
+.Offers-discounts{
+    display: flex;
+   padding-top: 20px;
+   background-color: #ffff;
+}
+
+.img img{
+    width: 80%;
+    padding-left: 17%;
+    height: 434px;
+    object-fit: cover;
+}
+
+.Img-Text{
+    color: #ffffff;
+    position: absolute;
+    top: 20%;
+    left: 29%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.Shop1{
+  display: inline-block;  
+  background-color: #ffffff;
+  color: #000;
+  padding: 9px;
+  border-radius: 100px;
+  width: 48%;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    padding: 4%;
+}
+
+
+.Best-containers{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+.Best-products{
+
+border: 1px solid rgb(212, 212, 212);
+border-radius: 8px;
+padding: 17px;
+text-align: center;
+width: 250px;
+/* box-shadow: 3px 4px 18px -4px ; */
+position: relative;
+}
+
+.Best-image{
+    width: 100%;
+    border-radius: 4px;
+    height: 243px;
+    object-fit: cover;
+}
+
+.sale{
+    display: inline-block;
+    position: absolute;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 7px;
+    width: 60px;
+    border-radius: 30px;
+    left: 9px;
+}
+
+.View{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.View a{
+     background-color:  #7b05dc;
+     padding: 10px;
+     border-radius: 10px;
+     width: 140px;
+     text-align: center;
+     color: #fff;
+     text-decoration: none;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Cartegories{
+display: flex;
+gap: 50px;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.C-products1{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.C-products{
+border-radius: 70%;
+padding: 2px;
+text-align: center;
+width: 120px;
+/* box-shadow: 3px 4px 18px -4px ; */
+position: relative;
+background-color: #c2c1c1;
+}
+
+.C-products img{
+width: 100%;
+border-radius: 100%;
+height: 124px;
+object-fit: cover;
+}
+
+.Sec2{
+background-color: #ffffff;
+display: flex;
+border: 1px solid #c2c1c1;
+position: relative;
+}
+
+.Sec2 img{
+    width: 50%;
+}
+
+.Price{
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 600;
+position: absolute;
+top: 30%;
+left: 56%;
+}
+
+
+
+.Price h1{
+    font-size: 47px;
+}
+
+.Price span{
+   font-size: small; 
+   font-weight: 500;
+}
+
+.Shop3{
+      display: inline-block;  
+  background-color: #7b05dc;
+  color: #fff;
+  padding: 14px;
+  border-radius: 100px;
+  width: 88%;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Tag{
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+padding: 30px;
+position: absolute;
+background-color: #ff0000;
+border-radius: 100%;
+color: white;
+width: 123px;
+left: 44%;
+top: 40px;
+rotate: 27deg;
+}
+
+.Sec3{
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.Sec3 h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Sec4{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.Sec4 img{
+    width: 54%;
+    object-fit: cover;
+    
+}
+
+.PriceII{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 99px;
+
+}
+
+
+
+.Special{
+ display: inline-block; 
+ background-color: #ff0000; 
+ color: #fff; 
+ padding: 3px;
+}
+
+.discount{
+  font-size: 60px;  
+}
+
+.discount span{
+    color: #7b05dc;
+}
+
+.newsLetter{
+  
+    /* background-color: #7b05dc; */
+background: linear-gradient(#7b05dc, #377bf1);
+    color: white;
+    padding: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.Input{
+    width: 70%;
+}
+
+.Input input{
+  width: 100%;
+    background-color: #7b05dc;
+    border: 1px solid #ffffff;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.mail{
+  display: flex; 
+  justify-content: space-between;
+  padding: 30px;
+  padding-right: 13%;
+  gap: 40px;
+}
+
+.mail button{
+    width: 180px;
+    color: white;
+    background-color: #000;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    /* padding: 10px; */
+}
+
+.helpCenter{
+    display: flex;
+}
+
+.helpCenter img{
+    object-fit: cover;
+    width: 50%;
+}
+
+.Help{
+    width: 70%;
+    background-color: #000;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top:120px;
+    padding-left: 44px;
+}
+
+.Help span{
+  display: inline-block; 
+  background-color: #ffffff; 
+  color: #7b05dc;
+  margin-top: 7%;
+  padding: 14px;
+  border-radius: 100px;
+}
+
+.PaymentMethods{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.PaymentMethods img{
+ width: 100px;   
+ gap:200px;
+}
+
+footer{
+  display: flex;  
+justify-content: space-between;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 30px;
+color: #333;
+background-color: #ffffff;
+}
+
+.KLinks ul li{
+    list-style: none;
+}
+
+.KLinks ul li a{
+  color: #000;
+    text-decoration: none;
+}
+
+
+
+footer .Kcartegories ul {
+    list-style: none;  
+  }
+  
+
+footer .Kcartegories ul li a{
+  color: #000;
+text-decoration: none;
+}
+
+.Kcartegories ul li{
+    padding: 4px;
+}
+
+footer .Kcatalog ul{
+    list-style: none;
+    }
+    
+
+footer .Kcatalog ul li a{
+   color: #000;
+    text-decoration: none;
+}
+
+.Kcatalog ul li{
+    padding: 4px;
+}
+
+
+footer .KBuisness ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.KBuisness ul li{
+    padding: 4px;
+    list-style: none;
+}
+
+.social-link{
+    border-top: 1px solid #7e7e7e;
+    color: #555555;
+    padding: 12px;
+    background-color: #ffffff;
+    display: grid;
+    place-items: center;
+}
+
+.Links{
+    display: flex;
+}
+
+.Links a i{
+    cursor: pointer;
+    color: white;
+    margin-right: 4%;
+    padding: 10px;
+}
+
+/* #top{
+    display: none;
+} */
+
+#back-to-top{
+    position: fixed;
+    bottom: 20px;
+    width: 40px;
+    right: 20px;
+    background-color: #ff11ac;
+    color: #fff;
+    border: 4px solid #ffffff;
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 100px;
+ z-index: 999;
+ display: none !important; 
+}
+
+#back-to-top:hover{
+   background-color: #7b05dc; 
+}
+
+
+
+@media (max-width: 1111px) {
+
+.ShopList{
+    display: none;
+}
+    
+}
+
+@media only screen and (max-width: 768px){
+    #back-to-top {
+        bottom: 10px;
+        right: 10px;
+        padding: 8px 12px;
+      display: block !important;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .Full-Screen img{
+        height: 300px;
+    }
+
+.Text{
+    font-size: 8px;
+}
+
+
+.Text h1{
+font-size: 24px;
+}
+
+.Text span{
+    font-size: 17px;
+}
+
+#slider{
+    width: 140px;
+}
+
+#Show{
+   display: none; 
+}
+
+.ShopList{
+    display: none;
+}
+
+.Offers-discounts{
+    flex-direction: column;
+}
+
+.img{
+    width: 100vw;
+}
+
+.img img{
+    width: 100%;
+    padding-left: 0;
+}
+
+.newsLetter{
+    position: relative;
+    height: 370px;
+}
+
+.newsLetter button{
+position: absolute;
+top: 80%;
+padding: 10px;
+}
+
+.helpCenter {
+    flex-direction: column-reverse;
+    
+}
+
+.Sec2{
+    height: 370px;
+}
+
+.PriceII{
+    padding: 33px;
+}
+
+.Tag{
+    width: 90px;
+    padding: 12px;
+}
+
+.Help{
+    width: 100vw;
+    padding: 60px;
+}
+
+.helpCenter img{
+    width: 100vw;
+}
+
+.Sec4{
+flex-direction: column;
+}
+
+.Sec4 img{
+    width: 100vw;
+}
+
+.mail{
+    padding-left: 0;
+}
+
+.Input input{
+    width: 140%;
+}
+
+.KBuisness{
+    display: none;
+}
+
+.P1{
+    width: 100px;
+}
+
+.P1 img{
+width: 100% ;
+}
+}

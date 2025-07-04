@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign Up </title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<!-- Add this inside <head> if not already present -->
+<style>
+  .form-inner {
+    transition: margin-left 0.6s ease;
+  }
+</style>
+
+<body>
+
+ 
+<div class="video-container">
+    <video width="320" autoplay loop muted>
+ <source  src="/Video/Lgin Vid.mp4">
+ your browser does not support this format
+    </video>
+</div>
+
+<header>
+    <div class="nav1">
+<p>&copy;Free shopping over $130 </p>
+
+  <ul>
+    <a href="about.html" id="Show"> About </a>
+  </ul>
+    </div>
+
+    <div class="Begin">
+    </div>
+</header>
+
+
+<br> <br>
+
+<div class="wrapper">
+  <div class="title-text">
+    <div class="title login"> Welcome To <br> K.Tech </div>
+ <div class="title signup"> Get Started </div>
+
+  </div>
+
+  <div class="form-container">
+<div class="slide-controls">
+  <input type="radio" name="slide" id="login" checked>
+  <input type="radio" name="slide" id="signup">
+<label for="login" class="slide login"> Login </label>
+<label for="signup" class="slide signup"> Signup </label>
+<div class="slider-tab"></div>
+</div>
+
+<div class="form-inner">
+<form action="#" class="login">
+
+  <div class="field">
+    <input type="text" placeholder="Email Address" required>
+  </div>
+
+  <div class="field">
+    <input type="password" placeholder="Password" required>
+  </div>
+
+<div class="pass-link"><a href="#"> Forgot password? </a></div>
+
+<div class="field btn">
+  <div class="btn-layer"> </div>
+  <input type="submit" value="Login" id="A">
+</div>
+<div class="signup-link">
+  Not a member? <a href="#"> Signup now </a></div>
+</form>
+
+<form action="#" class="signup"> 
+<div class="field">
+  <input type="text" placeholder="Email Address" required>
+</div>  
+
+<div class="field">
+  <input type="password" placeholder=" Password " required>
+</div>
+
+<div class="field">
+  <input type="password" placeholder="Confirm Password " required>
+</div>
+
+<div class="field btn">
+  <div class="btn-layer"></div>
+  <input type="submit" value="Signup">
+</div>
+
+</form>
+</div>
+  </div>
+
+</div>
+
+<script src="auth.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // LOGIN form
+  const loginForm = document.querySelector("form.login");
+  loginForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent actual form submission
+    alert("Login Successful!");
+    window.location.href = "home.html"; // Redirect to home page
+  });
+
+  // SIGNUP form
+  const signupForm = document.querySelector("form.signup");
+  signupForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent actual form submission
+    alert("Signup Successful!");
+    window.location.href = "home.html"; // Redirect to home page
+  });
+});
+</script>
+
+
+</body>
+</html>
