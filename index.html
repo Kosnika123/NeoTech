@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loginForm.addEventListener("submit", function (e) {
     e.preventDefault(); // Prevent actual form submission
     alert("Login Successful!");
-    window.location.href = "/Home.html"; // Redirect to home page
+    window.location.href = "Home.html"; // No leading slash if the file is in the same directory// Redirect to home page
   });
 
   // SIGNUP form
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
   signupForm.addEventListener("submit", function (e) {
     e.preventDefault(); // Prevent actual form submission
     alert("Signup Successful!");
-    window.location.href = "/Home.html"; // Redirect to home page
+    window.location.href = "Home.html"; // Redirect to home page
   });
 });
 </script>
